@@ -1,0 +1,18 @@
+<!-- patient/templates/patient/make_appointment.html -->
+<h1>Make an Appointment</h1>
+<form method="post">
+    {% csrf_token %}
+    <label for="doctor">Doctor:</label>
+    <select name="doctor_id" id="doctor">
+        {% for doctor in doctors %}
+            <option value="{{ doctor.id }}">{{ doctor.user.username }} ({{ doctor.specialization }})</option>
+        {% endfor %}
+    </select>
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date">
+    <label for="time">Time:</label>
+    <input type="time" id="time" name="time">
+    <label for="symptoms">Symptoms:</label>
+    <textarea id="symptoms" name="symptoms" rows="4" cols="50"></textarea>
+    <button type="submit">Submit</button>
+</form>

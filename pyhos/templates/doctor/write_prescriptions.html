@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Write Prescription
+{% endblock %}
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/write_prescription.css' %}">
+<div class="container">
+    <h1>Write Prescription</h1>
+    <form method="post">
+        {% csrf_token %}
+        <textarea name="prescription_text" rows="4" cols="50"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+{% endblock %}
+

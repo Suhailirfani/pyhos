@@ -1,0 +1,86 @@
+/* Reset some basic elements */
+#doctor-dashboard body, 
+#doctor-dashboard h1, 
+#doctor-dashboard h2, 
+#doctor-dashboard ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic body styling */
+#doctor-dashboard {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Main container */
+#doctor-dashboard .container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+#doctor-dashboard h1 {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#doctor-dashboard h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* List styling */
+#doctor-dashboard ul {
+    list-style-type: none;
+}
+
+#doctor-dashboard li {
+    background: #fcfbfb;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#doctor-dashboard li a {
+    color: #022b5c;
+    text-decoration: none;
+    border: 1px solid #007bff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#doctor-dashboard li a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+#doctor-dashboard .logout-btn {
+    display: block;
+    width: 100px;
+    margin: 20px auto;
+    text-align: center;
+    background: #dc3545;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+#doctor-dashboard .logout-btn:hover {
+    background-color: #c82333;
+}

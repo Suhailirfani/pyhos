@@ -1,0 +1,72 @@
+{% extends 'base.html'%}
+{% block title%}
+home
+{% endblock %}
+{% block content%}
+{% load static %}
+
+
+<div id="carouselExampleDark" class="carousel carousel-dark slide w-100 mx-auto border rounded" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="5000">
+      <img src="{% static 'images/bann1.webp'%}" class="d-block w-100" alt="..." height="300px">
+      
+    </div>
+    <div class="carousel-item" data-bs-interval="5000">
+      <img src="{% static '/images/bann2.jpg'%}" class="d-block w-100" alt="..." height="300px">
+
+    </div>
+    <div class="carousel-item" data-bs-interval="5000">
+      <img src="{% static '/images/bann3.jpg'%}" class="d-block w-100" alt="..." height="300px">
+
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<style>
+    .nowrap {
+        white-space: wrap;
+        text-align: justify;
+    }
+</style>
+</style>
+
+<div class="container p-4 ">
+    <h3 class="container text-center text-white p-1 bg-success border rounded" >Welcome to Dawacare Hospital</h3>
+
+    <h5 class="container text-center bg-info border rounded">Elanad, Thrissur </h5>
+    <div class="container col-md-12 col-xs-12 ">
+    <p class="nowrap">
+    Welcome to Dawacare Hospital, a premier healthcare institution dedicated to providing exceptional
+      medical care and services to the community. Located in the heart of Elanad, Thrissur, Dawacare
+      Hospital is committed to improving the health and well-being of our patients through
+      comprehensive and compassionate care.
+
+
+    Why Choose Dawacare Hospital?
+    - Comprehensive Care: We offer a wide range of medical services to meet all your healthcare needs.
+    - Experienced Specialists: Our team of highly qualified doctors and healthcare professionals are dedicated to providing the best possible care.
+    - State-of-the-Art Facilities: Our hospital is equipped with modern medical technology and facilities to ensure the highest standard of care.
+    - Patient-Centered Approach: We prioritize our patients' comfort and satisfaction, ensuring a supportive and compassionate environment for all.
+
+    At Dawacare Hospital, we are committed to delivering excellent healthcare services and improving the quality of life for our patients. Visit us today and experience the difference in healthcare excellence.
+
+    </p>
+    </div>
+
+{% endblock %}
+
+</div>

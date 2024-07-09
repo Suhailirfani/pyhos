@@ -1,0 +1,19 @@
+<!-- patient/templates/patient/dashboard.html -->
+{% load static %}
+<h1>Patient Dashboard</h1>
+<link rel="stylesheet" href="{% static 'css/p_dashboard.css' %}">
+<h2>Appointments</h2>
+<ol>
+    {% for appointment in appointments %}
+        <li>{{ appointment.appointment_date }} - {{ appointment.time }} with {{ appointment.doctor.name }}</li>
+    {% endfor %}
+</ol>
+<h2>Prescriptions</h2>
+<ol>
+    {% for prescription in prescriptions %}
+        <li><h5>{{ prescription.appointment.appointment_date }}:</h5> {{ prescription.prescription_text }}  </li>
+    {% endfor %}
+</ol>
+<a href="{% url 'make_appointment' %}">Make an Appointment</a>
+<br>
+<a href="{%url 'logout'%}">Logout</a>
